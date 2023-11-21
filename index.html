@@ -1,1 +1,49 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>你好，GitHub</title>
+  </head>
+  <body>
+    <h1>覺得厲害</h1>
+  </body>
+</html>
+$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+$ echo "hello, git" > welcome.html
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	welcome.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+$ git add welcome.html
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   welcome.html
+$ git remote add origin https://github.com/eddiekao/eddiekao.github.io.git
+
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/eddiekao/eddiekao.github.io.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
